@@ -1,4 +1,4 @@
-## Foundations II: JavaScript 
+## Foundations II: JavaScript
 ### Lab 2, Beginning Track
 
 1. Make sure you're logged in to your account on GitHub.
@@ -15,3 +15,53 @@ comments. Be sure to read everything. Run lab2.js with `node lab2.js`.
 
 
 #### Resources and Collaborators
+
+MDN/W3School:
+- Methods: push, join, split, concat, charAt, toUpperCase, toLowerCase
+- Math.max
+- Return
+
+From class:
+- Class 4 slides
+- Class 3 and 4 notes
+- Lab 1 for reference
+
+Checked code with classmates:
+
+<-- Clare's Blob Code -->
+var peopleLeft = 1000
+var j=1
+while(peopleLeft>0){
+  j++
+  peopleLeft = peopleLeft -j //where j is the number you are at in the loop
+}
+
+<-- Dustin's Blob Code -->
+function Blob() {
+  this.hoursToOoze = function (population, peoplePerHour) {
+    var mealRounds = 0;
+    while(0 < population) {
+      population = population - peoplePerHour;
+      peoplePerHour++;
+      mealRounds++;
+    };
+    return mealRounds;
+  };
+};
+
+ //TODO: Next, create an instance of Blob named blob.
+ var blob = new Blob();
+
+ <-- Tina's Variablify Code -->
+string = string.toLowerCase();
+  var splitString = string.split(' ');
+  var splitChar = '';
+  for (var i = 1; i < splitString.length; i++) {
+    splitChar = splitString[i].split('');
+    splitChar[0] = splitChar[0].toUpperCase();
+    splitString[i] = splitChar.join('');
+  }
+  return splitString.join('');
+
+
+
